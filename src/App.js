@@ -26,6 +26,7 @@ const DUMMAY_EXPENSES = [
 
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMAY_EXPENSES);
+  const [hideExpenseForm, setHideExpenseForm] = useState(true);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevState) => {
